@@ -1,6 +1,17 @@
-var app = require('http').createServer()
+//var app = require('http').createServer()
 
-app.listen(8900)
+//app.listen(8900)
+
+var express = require('express');
+var http = require('http');
+var app = express();
+
+//http.createServer(app).listen(8900);
+
+app.get('/',function(req,res){
+    console.log('Listening to port 8900')
+    res.send('Tic Tak Toe Game Starts Now!!!');
+});
 
 function Player(socket) {
     var self = this
@@ -217,3 +228,5 @@ Game.prototype.startGame = function() {
 
 // Start the game server
 var game = new Game()
+
+module.exports = app;
