@@ -1,6 +1,6 @@
 var app = require('http').createServer()
 
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 9000);
 
 //app.set('port',process.env.PORT || 3000);
 //app.listen(8900)
@@ -275,5 +275,5 @@ Game.prototype.startGame = function() {
 // Start the game server
 var game = new Game()
 
-//module.exports = app;
+module.exports = app;
 // module.exports = server;

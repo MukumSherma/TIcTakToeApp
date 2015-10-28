@@ -1,6 +1,6 @@
 {
 	"scripts": {
-    "start": "node index.js"
+    "start": ""
   	},
     "dependencies": {
         "socket.io": ""
