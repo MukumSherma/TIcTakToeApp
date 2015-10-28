@@ -1,17 +1,63 @@
-//var app = require('http').createServer()
+var app = require('http').createServer()
 
+app.listen(process.env.PORT || 3000);
+
+//app.set('port',process.env.PORT || 3000);
 //app.listen(8900)
 
-var express = require('express');
-var http = require('http');
-var app = express();
+// var express = require('express');
+// var http = require('http');
+// var app = express();
 
 //http.createServer(app).listen(8900);
 
-app.get('/',function(req,res){
-    console.log('Listening to port 8900')
-    res.send('Tic Tak Toe Game Starts Now!!!');
-});
+// var express = require('express');
+// var app = express();
+//var app = require('http').Server(express);
+//var io = require('socket.io')(app);
+
+//var app = require('http').createServer()
+//app.listen(8900)
+
+// app.get('/',function(req,res){
+//     console.log('Listening to port 8900')
+//     res.send('Tic Tak Toe Game Starts Now!!!');
+// });
+
+// var app = require('express')();
+// app.set('port',process.env.PORT || 3000);
+// var server = require('http').createServer(app)
+// var io = require('socket.io').listen(server);
+
+// server.listen(app.get('port'),function(){
+//     console.log('ChatCAT on port : '+app.get('port'));
+// })
+//var http = require('http').Server(app);
+
+// var app = require('http').createServer();
+// app.set('port',process.env.PORT || 3000);
+// var server = require('http').createServer(app);
+// server.listen(app.get('port'),function(){
+//     console.log('ChatCAT on port : '+app.get('port'));
+// })
+
+// var app = require('express')();
+// var server = require('http').Server(app);
+
+// var http = require('http');
+// var express = require('express'),
+//     app = module.exports.app = express();
+
+// var server = http.createServer(app);
+// var io = require('socket.io').listen(server);
+
+// server.listen('89');
+
+// var app = require('express')();
+// var server = require('http').Server(app);
+// var io = require('socket.io')(server);
+
+// server.listen(80);
 
 function Player(socket) {
     var self = this
@@ -229,4 +275,5 @@ Game.prototype.startGame = function() {
 // Start the game server
 var game = new Game()
 
-module.exports = app;
+//module.exports = app;
+// module.exports = server;
