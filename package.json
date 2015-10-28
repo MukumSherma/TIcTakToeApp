@@ -1,8 +1,9 @@
 {
-	"scripts": {
-    "start": ""
-  	},
-    "dependencies": {
-        "socket.io": ""
-    }
+  "scripts": {
+    "start": "index.js"
+  },
+  "dependencies": {
+    "mime": "^1.3.4",
+    "socket.io": ""
+  }
 }

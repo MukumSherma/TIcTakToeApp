@@ -1,9 +1,17 @@
-var app = require('http').createServer()
+// var app = require('http').createServer()
 
-app.listen(process.env.PORT || 9000);
+// app.listen(process.env.PORT || 9000);
+
+var http = require("http");
+
+var app = http.createServer(function(request, response) {
+  response.writeHead(200, {"Content-Type": "text/plain"});
+  response.write("It's alive!");
+  response.end();
+}).listen(process.env.PORT || 7000);
 
 //app.set('port',process.env.PORT || 3000);
-//app.listen(8900)
+//app.listen(9000)
 
 // var express = require('express');
 // var http = require('http');
